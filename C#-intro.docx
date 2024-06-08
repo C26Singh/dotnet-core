@@ -13,7 +13,7 @@ public class HelloWorld
         System.Console.WriteLine("Hello, World!");
     }
 }
-C# 2.0 (2005)
+##  C# 2.0 (2005)
 Key Features
 Generics: Type-safe data structures.
 Iterators: Simplify collection traversal using yield.
@@ -35,7 +35,7 @@ public IEnumerable<int> GetNumbers()
 
 // Nullable Types
 int? nullableInt = null;
-C# 3.0 (2007)
+##  C# 3.0 (2007)
 Key Features
 LINQ (Language Integrated Query): Query capabilities integrated into C#.
 Lambda Expressions: Shorter syntax for anonymous methods.
@@ -53,7 +53,7 @@ var person = new { Name = "John", Age = 30 };
 
 // Automatic Properties
 public string Name { get; set; }
-C# 4.0 (2010)
+##  C# 4.0 (2010)
 Key Features
 Dynamic Typing: Enables dynamic programming.
 Named and Optional Parameters: More flexibility in method calls.
@@ -68,7 +68,7 @@ expando.Name = "John";
 // Named and Optional Parameters
 void Print(string message = "Hello", int number = 0) { }
 Print(number: 5);
-C# 5.0 (2012)
+##  C# 5.0 (2012)
 Key Features
 Async and Await: Simplify asynchronous programming.
 Caller Info Attributes: Retrieve information about the caller of a method.
@@ -81,7 +81,7 @@ async Task<int> FetchDataAsync()
     await Task.Delay(1000);
     return 42;
 }
-C# 6.0 (2015)
+##  C# 6.0 (2015)
 Key Features
 Auto-Property Initializers: Set default values for properties.
 Expression-bodied Members: Concise syntax for methods and properties.
@@ -103,7 +103,7 @@ var message = $"Hello, {name}!";
 // Null-conditional Operator
 string text = null;
 int? length = text?.Length;
-C# 7.0 - 7.3 (2017-2018)
+##  C# 7.0 - 7.3 (2017-2018)
 Key Features
 Tuples and Deconstruction: Simplify returning multiple values.
 Pattern Matching: Enhanced switch statements and is expressions.
@@ -129,7 +129,7 @@ void OuterFunction()
     void InnerFunction() => Console.WriteLine("Hello from Inner");
     InnerFunction();
 }
-C# 8.0 (2019)
+##  C# 8.0 (2019)
 Key Features
 Nullable Reference Types: Improve null safety by distinguishing between nullable and non-nullable references.
 Async Streams: Asynchronous iteration with IAsyncEnumerable<T>.
@@ -155,7 +155,7 @@ async IAsyncEnumerable<int> GetNumbersAsync()
 // Ranges and Indices
 string[] words = { "Hello", "World" };
 var slice = words[1..]; // "World"
-C# 9.0 (2020)
+##  C# 9.0 (2020)
 Key Features
 Records: Immutable data objects with built-in value equality.
 Init-only Setters: Allow properties to be set only during object initialization.
@@ -172,7 +172,7 @@ public string Name { get; init; }
 
 // Top-level Statements
 Console.WriteLine("Hello, World!");
-C# 10.0 (2021)
+##  C# 10.0 (2021)
 Key Features
 Global Using Directives: Define using directives globally for the entire project.
 File-scoped Namespaces: Reduce indentation for namespaces.
@@ -194,7 +194,7 @@ public record struct Point(int X, int Y);
 
 // Extended Property Patterns
 bool IsDefault(Point point) => point is { X: 0, Y: 0 };
-C# 11.0 (2022)
+##  C# 11.0 (2022)
 Key Features
 Raw String Literals: Simplify multi-line strings with less escaping.
 List Patterns: More powerful pattern matching with lists.
@@ -218,7 +218,7 @@ public interface IParseable<T>
 {
     static abstract T Parse(string input);
 }
-C# 12.0 (2024)
+##  C# 12.0 (2024)
 Key Features
 Primary Constructors for Classes: Simplify constructor syntax for classes.
 Enhanced Interpolated Strings: Improved string interpolation capabilities.
