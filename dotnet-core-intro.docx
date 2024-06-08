@@ -1,1 +1,188 @@
+Introduction to .NET Core
 
+What is .NET Core?
+Installing .NET Core SDK
+Understanding .NET Core CLI
+Basic C# Concepts
+
+Data types, Variables, and Constants
+Control Structures (if-else, switch, loops)
+Functions and Methods
+Object-Oriented Programming (Classes, Objects, Inheritance, Polymorphism, Encapsulation, Abstraction)
+First .NET Core Application
+
+Creating a simple console application
+Understanding the project structure
+Building and running the application
+Working with Data
+
+Strings, Arrays, Collections (List, Dictionary)
+LINQ (Language Integrated Query)
+Intermediate Level
+ASP.NET Core Basics
+
+Setting up an ASP.NET Core project
+MVC (Model-View-Controller) pattern
+Routing
+Dependency Injection
+Entity Framework Core
+
+Introduction to ORM (Object-Relational Mapping)
+Setting up Entity Framework Core
+Creating Models
+Migrations
+CRUD Operations (Create, Read, Update, Delete)
+Web API Development
+
+Creating RESTful services
+Routing and Controllers
+HTTP methods (GET, POST, PUT, DELETE)
+Postman for API testing
+Authentication and Authorization
+
+Identity framework
+JWT (JSON Web Tokens)
+Policy-based authorization
+Advanced Level
+Advanced ASP.NET Core Features
+
+Middleware
+Filters
+Custom Model Binding
+Microservices Architecture
+
+Understanding microservices
+Building microservices with .NET Core
+Communication between microservices (gRPC, RabbitMQ, etc.)
+Testing
+
+Unit Testing with xUnit
+Integration Testing
+Mocking dependencies
+Performance and Security
+
+Caching
+Logging
+Security best practices
+Optimization techniques
+Deployment
+
+Hosting (IIS, Kestrel, Nginx)
+Continuous Integration/Continuous Deployment (CI/CD) with Azure DevOps or GitHub Actions
+Containerization with Docker
+Cloud Deployment (Azure, AWS)
+Resources
+Documentation and Tutorials
+
+Official .NET Documentation: docs.microsoft.com/dotnet
+ASP.NET Core Documentation: docs.microsoft.com/aspnet/core
+Pluralsight, Udemy, and Coursera for video tutorials and courses.
+Books
+
+"Pro ASP.NET Core 3" by Adam Freeman
+"ASP.NET Core in Action" by Andrew Lock
+Communities and Forums
+
+Stack Overflow
+Reddit: r/dotnet
+.NET Foundation
+----------------------------------------------------------------
+Evolution of .NET Core
+1. Initial Release (2016): .NET Core 1.0
+
+Key Features: Cross-platform (Windows, macOS, Linux), modular framework, open-source.
+2. .NET Core 2.0 (2017):
+
+Key Features: Improved compatibility with .NET Framework, expanded API surface, easier migration from .NET Framework.
+3. .NET Core 3.0/3.1 (2019):
+
+Key Features: Support for Windows desktop applications (WinForms, WPF), long-term support (LTS) for 3.1, Blazor for web development.
+4. .NET 5 (2020):
+
+Key Features: Unified platform (merging .NET Core and .NET Framework), C# 9, performance improvements, ARM64 support.
+5. .NET 6 (2021):
+
+Key Features: Long-term support (LTS), .NET MAUI (multi-platform app UI), minimal APIs, Hot Reload.
+6. .NET 7 (2022):
+
+Key Features: Performance enhancements, .NET MAUI improvements, Cloud-native support.
+7. .NET 8 (2024):
+
+Key Features: Enhanced performance, ASP.NET Core updates, Entity Framework Core enhancements, .NET MAUI improvements, C# 12​ (Microsoft Developer Blogs)​​ (Microsoft Learn)​​ (Microsoft)​.
+Main Advantages
+Cross-Platform Support:
+
+Develop and run applications on Windows, macOS, and Linux.
+Performance:
+
+High performance and scalability, with continuous improvements in runtime and garbage collection.
+Unified Platform:
+
+A single platform for all types of applications (web, mobile, desktop, cloud, microservices).
+Open Source:
+
+Community-driven development, transparency, and collaboration via GitHub.
+Modularity:
+
+Ability to include only the necessary components, reducing the application's footprint.
+Advanced Tools and Features:
+
+Integrated with Visual Studio, strong support for modern development practices (CI/CD, containerization).
+Main Disadvantages
+Learning Curve:
+
+Transitioning from .NET Framework to .NET Core can be challenging for developers familiar with the older framework.
+API Gaps:
+
+Some APIs and features available in the .NET Framework may not be present or behave differently in .NET Core.
+Ecosystem Maturity:
+
+While improving, some third-party libraries and tools might lag in support or compatibility with the latest .NET versions.
+Platform-Specific Limitations:
+
+Certain features may work better or only be available on specific platforms (e.g., Windows-specific features).
+
+---------------------------------------------------------------------------------------------
+The .NET CLI (Command-Line Interface) is a cross-platform toolchain for developing, building, running, and managing .NET applications. It provides commands to perform various tasks, such as creating new projects, restoring dependencies, building projects, and running applications.
+
+Most Used Commands
+dotnet new
+
+Usage: Creates a new .NET project or file from a template.
+Example: dotnet new console - Creates a new console application.
+dotnet restore
+
+Usage: Restores the dependencies and tools specified in a .NET project.
+Example: dotnet restore - Restores the dependencies for the project in the current directory.
+dotnet build
+
+Usage: Builds a .NET project and its dependencies.
+Example: dotnet build - Compiles the project and all of its dependencies.
+dotnet run
+
+Usage: Runs the application from the source code.
+Example: dotnet run - Builds and runs the application.
+dotnet publish
+
+Usage: Publishes the application and its dependencies to a folder for deployment.
+Example: dotnet publish -c Release -o ./publish - Publishes the application in Release configuration to the ./publish folder.
+dotnet test
+
+Usage: Runs unit tests using a test runner specified in the project.
+Example: dotnet test - Runs tests in the project.
+dotnet add
+
+Usage: Adds a package or reference to the project.
+Example: dotnet add package Newtonsoft.Json - Adds the Newtonsoft.Json package to the project.
+dotnet remove
+
+Usage: Removes a package or reference from the project.
+Example: dotnet remove package Newtonsoft.Json - Removes the Newtonsoft.Json package from the project.
+dotnet clean
+
+Usage: Cleans the output of the previous build.
+Example: dotnet clean - Cleans the build outputs of the project.
+dotnet sln
+
+Usage: Manages solution (.sln) files.
+Example: dotnet sln add MyProject.csproj - Adds a project to the solution.
