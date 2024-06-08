@@ -1,11 +1,11 @@
-C# 1.0 (2002)
-Key Features:
+# Evolution of C# Language Features
 
-Basic syntax and object-oriented programming principles.
-Example:
+## C# 1.0 (2002)
+### Key Features
+- Basic syntax and object-oriented programming principles.
 
-csharp
-Copy code
+### Example
+```csharp
 public class HelloWorld
 {
     public static void Main()
@@ -14,14 +14,12 @@ public class HelloWorld
     }
 }
 C# 2.0 (2005)
-Key Features:
-
+Key Features
 Generics: Type-safe data structures.
 Iterators: Simplify collection traversal using yield.
 Partial Classes: Split a class across multiple files.
 Nullable Types: Allow value types to be null.
-Example:
-
+Example
 csharp
 Copy code
 // Generics
@@ -38,14 +36,12 @@ public IEnumerable<int> GetNumbers()
 // Nullable Types
 int? nullableInt = null;
 C# 3.0 (2007)
-Key Features:
-
+Key Features
 LINQ (Language Integrated Query): Query capabilities integrated into C#.
 Lambda Expressions: Shorter syntax for anonymous methods.
 Anonymous Types: Define classes without explicitly declaring them.
 Automatic Properties: Simplify property declarations.
-Example:
-
+Example
 csharp
 Copy code
 // LINQ and Lambda Expressions
@@ -58,13 +54,11 @@ var person = new { Name = "John", Age = 30 };
 // Automatic Properties
 public string Name { get; set; }
 C# 4.0 (2010)
-Key Features:
-
+Key Features
 Dynamic Typing: Enables dynamic programming.
 Named and Optional Parameters: More flexibility in method calls.
 Embedded Interop Types: Simplify COM interop.
-Example:
-
+Example
 csharp
 Copy code
 // Dynamic Typing
@@ -75,12 +69,10 @@ expando.Name = "John";
 void Print(string message = "Hello", int number = 0) { }
 Print(number: 5);
 C# 5.0 (2012)
-Key Features:
-
+Key Features
 Async and Await: Simplify asynchronous programming.
 Caller Info Attributes: Retrieve information about the caller of a method.
-Example:
-
+Example
 csharp
 Copy code
 // Async and Await
@@ -90,14 +82,12 @@ async Task<int> FetchDataAsync()
     return 42;
 }
 C# 6.0 (2015)
-Key Features:
-
+Key Features
 Auto-Property Initializers: Set default values for properties.
 Expression-bodied Members: Concise syntax for methods and properties.
 String Interpolation: Embed expressions within string literals.
 Null-conditional Operator: Simplify null checks.
-Example:
-
+Example
 csharp
 Copy code
 // Auto-Property Initializers
@@ -114,14 +104,12 @@ var message = $"Hello, {name}!";
 string text = null;
 int? length = text?.Length;
 C# 7.0 - 7.3 (2017-2018)
-Key Features:
-
+Key Features
 Tuples and Deconstruction: Simplify returning multiple values.
 Pattern Matching: Enhanced switch statements and is expressions.
 Local Functions: Define functions within other functions.
 Ref Returns and Locals: More control over memory usage.
-Example:
-
+Example
 csharp
 Copy code
 // Tuples and Deconstruction
@@ -142,14 +130,12 @@ void OuterFunction()
     InnerFunction();
 }
 C# 8.0 (2019)
-Key Features:
-
+Key Features
 Nullable Reference Types: Improve null safety by distinguishing between nullable and non-nullable references.
 Async Streams: Asynchronous iteration with IAsyncEnumerable<T>.
 Default Interface Methods: Add methods to interfaces with implementations.
 Ranges and Indices: Simplify array slicing.
-Example:
-
+Example
 csharp
 Copy code
 // Nullable Reference Types
@@ -170,14 +156,12 @@ async IAsyncEnumerable<int> GetNumbersAsync()
 string[] words = { "Hello", "World" };
 var slice = words[1..]; // "World"
 C# 9.0 (2020)
-Key Features:
-
+Key Features
 Records: Immutable data objects with built-in value equality.
 Init-only Setters: Allow properties to be set only during object initialization.
 Top-level Statements: Simplify program entry points.
 Pattern Matching Enhancements: Improved pattern matching.
-Example:
-
+Example
 csharp
 Copy code
 // Records
@@ -189,14 +173,12 @@ public string Name { get; init; }
 // Top-level Statements
 Console.WriteLine("Hello, World!");
 C# 10.0 (2021)
-Key Features:
-
+Key Features
 Global Using Directives: Define using directives globally for the entire project.
 File-scoped Namespaces: Reduce indentation for namespaces.
 Record Structs: Value type records.
 Extended Property Patterns: More expressive property patterns.
-Example:
-
+Example
 csharp
 Copy code
 // Global Using Directives
@@ -213,13 +195,11 @@ public record struct Point(int X, int Y);
 // Extended Property Patterns
 bool IsDefault(Point point) => point is { X: 0, Y: 0 };
 C# 11.0 (2022)
-Key Features:
-
+Key Features
 Raw String Literals: Simplify multi-line strings with less escaping.
 List Patterns: More powerful pattern matching with lists.
 Static Abstract Members in Interfaces: Allow static members in interfaces.
-Example:
-
+Example
 csharp
 Copy code
 // Raw String Literals
@@ -239,13 +219,11 @@ public interface IParseable<T>
     static abstract T Parse(string input);
 }
 C# 12.0 (2024)
-Key Features:
-
+Key Features
 Primary Constructors for Classes: Simplify constructor syntax for classes.
 Enhanced Interpolated Strings: Improved string interpolation capabilities.
 Default Interface Members Enhancements: More flexibility in interface implementations.
-Example:
-
+Example
 csharp
 Copy code
 // Primary Constructors for Classes
