@@ -1,1 +1,126 @@
 
+C# 1.0 (2002)
+Introduction of C# Language: Basic syntax and object-oriented programming features.
+Example:
+csharp
+Copy code
+public class HelloWorld
+{
+    public static void Main()
+    {
+        System.Console.WriteLine("Hello, World!");
+    }
+}
+C# 2.0 (2005)
+Generics: Type-safe data structures.
+Iterators: Simplify collection traversal.
+Partial Classes: Split classes across multiple files.
+Nullable Types: Represent value types as null.
+Example:
+csharp
+Copy code
+List<int> numbers = new List<int>();
+int? nullableInt = null;
+C# 3.0 (2007)
+LINQ (Language Integrated Query): Query capabilities integrated into C#.
+Lambda Expressions: Shorter syntax for anonymous methods.
+Anonymous Types: Simple classes without explicit definition.
+Automatic Properties: Simplify property declarations.
+Example:
+csharp
+Copy code
+var numbers = new List<int> { 1, 2, 3, 4 };
+var evenNumbers = numbers.Where(n => n % 2 == 0);
+C# 4.0 (2010)
+Dynamic Typing: Interoperability with dynamic languages.
+Named and Optional Parameters: More flexibility in method calls.
+Embedded Interop Types: Simplify COM interoperability.
+Example:
+csharp
+Copy code
+dynamic expando = new System.Dynamic.ExpandoObject();
+void Print(string message = "Hello", int number = 0) { }
+C# 5.0 (2012)
+Async and Await: Simplify asynchronous programming.
+Caller Info Attributes: Access caller information.
+Example:
+csharp
+Copy code
+async Task<int> FetchDataAsync()
+{
+    await Task.Delay(1000);
+    return 42;
+}
+C# 6.0 (2015)
+Auto-Property Initializers: Set default values for properties.
+Expression-bodied Members: Concise syntax for methods and properties.
+String Interpolation: Embed expressions within strings.
+Null-conditional Operator: Simplify null checks.
+Example:
+csharp
+Copy code
+public string Name { get; set; } = "Unknown";
+public override string ToString() => $"Name: {Name}";
+C# 7.0 - 7.3 (2017-2018)
+Tuples and Deconstruction: Simplify returning multiple values.
+Pattern Matching: Enhanced switch statements.
+Local Functions: Define functions within other functions.
+Ref Returns and Locals: More control over memory usage.
+Example:
+csharp
+Copy code
+(int, string) GetPerson() => (1, "John");
+var (id, name) = GetPerson();
+C# 8.0 (2019)
+Nullable Reference Types: Improve null safety.
+Async Streams: Asynchronous iteration.
+Default Interface Methods: Add methods to interfaces with implementations.
+Ranges and Indices: Simplify array slicing.
+Example:
+csharp
+Copy code
+string[] words = { "Hello", "World" };
+var slice = words[1..]; // "World"
+C# 9.0 (2020)
+Records: Immutable data objects.
+Init-only Setters: Initialize properties during object creation.
+Top-level Statements: Simplify program entry points.
+Pattern Matching Enhancements: Improved pattern matching.
+Example:
+csharp
+Copy code
+public record Person(string Name, int Age);
+var person = new Person("John", 30) { Age = 31 };
+C# 10.0 (2021)
+Global Using Directives: Simplify using directives.
+File-scoped Namespaces: Reduce indentation for namespaces.
+Record Structs: Value type records.
+Extended Property Patterns: More expressive property patterns.
+Example:
+csharp
+Copy code
+global using System;
+namespace MyNamespace;
+public record struct Point(int X, int Y);
+C# 11.0 (2022)
+Raw String Literals: Simplified multi-line strings.
+List Patterns: More powerful list pattern matching.
+Static Abstract Members in Interfaces: Allow static members in interfaces.
+Example:
+csharp
+Copy code
+string json = """
+{
+    "name": "John",
+    "age": 30
+}
+""";
+C# 12.0 (2024)
+Primary Constructors for Classes: Simplify constructor syntax.
+Enhanced Interpolated Strings: Improved string interpolation.
+Default Interface Members Enhancements: More flexibility in interface implementations.
+Example:
+csharp
+Copy code
+public class Person(string name, int age);
+var person = new Person("John", 30);
